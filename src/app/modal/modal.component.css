@@ -1,0 +1,8 @@
+.redlogo {
+    background-image: url('/assets/angular-red.png');
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    padding: 5px 30px;
+}

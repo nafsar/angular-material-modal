@@ -1,0 +1,28 @@
+<div Class="boxeffect">
+  <div>
+    <h2>
+      <span class="logo"> </span>
+      <span>{{title}}</span>
+    </h2>
+    <mat-form-field>
+
+      <input type="email" placeholder='{{emailmsg}}' email name="emailField" matInput [(ngModel)]="email" #emailField="ngModel">
+      <div *ngIf="emailField.invalid" class="invalid-field">
+        <span *ngIf="emailField.hasError('email')" [ngClass]="['color-red']">
+          {{invalid}}
+        </span>
+      </div>
+     <div class="container">
+      <button  mat-raised-button (click)="openModal()"> NEXT </button> 
+     </div>
+    </mat-form-field>
+
+
+  </div>
+  <div *ngIf="colortype" style="margin-left:20px;margin-top:15px;">
+    Your favorite color is
+    <i>{{colortype}}
+      <span *ngIf="name">at {{name}}</span>
+    </i>
+  </div>
+</div>

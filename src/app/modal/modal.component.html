@@ -1,0 +1,20 @@
+<h3 mat-dialog-title>
+
+  <div *ngIf="data.email;then yes else no"></div>
+
+  <ng-template #yes>Material: {{data.email}}</ng-template>
+  <ng-template #no></ng-template>
+  <span class="redlogo">
+    <span>Material</span>
+  </span>
+</h3>
+<div mat-dialog-content>
+  <p>Favorite color?</p>
+  <mat-form-field>
+    <input matInput tabindex="1" [(ngModel)]="data.colortype">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button [mat-dialog-close]="data.colortype" tabindex="2" [ngClass]="['ok-center']">Ok</button>
+ 
+</div>

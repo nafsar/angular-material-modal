@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.ok-center {
+    margin:0 auto;
+  }
+
+  .mat-form-field-infix {
+    width:300px !important;
+  }
+  .logo {
+    width:35px;
+    height:35px;
+    background-image: url('/assets/angular.png');
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    padding-right:30px;
+    
+ }
+ .color-red{
+  color:rgb(173, 6, 6);
+}
+ 
